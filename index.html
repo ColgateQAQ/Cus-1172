@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <audio src="resources/music.flac" id="music" ></audio>
+    <script type="text/javascript">
+        function playMusic() {
+            var music = document.getElementById("music");
+            music.play();
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center">My homePage</h1>
+    </div>
+
+    <div>
+        <h2>Basic profile information</h2>
+    </div>
+
+    <img src="resources/homepage.jpeg" height="100" width="100"/>
+
+    <div>
+        <p>
+            Name:
+            <span style="color: deepskyblue">Lujie Wang</span>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            major:
+            <span style="color: deepskyblue">computer science</span>
+        </p>
+    </div>
+
+    <hr/>
+
+    <div>
+        <h3>Education summary</h3>
+        <li>I'm a St John's college student</li>
+    </div>
+
+    <div>
+        <h3>Work Experience</h3>
+        <li>Java engineer
+            <span style="color: deepskyblue">May 2021 ~ July 2022</span>
+        </li>
+    </div>
+
+
+    <div>
+        <h3>Programming Skills</h3>
+        <ul>
+            <li>Java <span style="color: green">Good at</span></li>
+            <li>MySql <span style="color: green">Good at</span></li>
+            <li>Linux <span style="color: orange">familiar</span></li>
+            <li>html <span style="color: red">Strangeness</span></li>
+        </ul>
+    </div>
+<hr/>
+
+    <div>
+        <h2>General Interests</h2>
+    </div>
+
+    <form>
+        <div>I usually like play games, sing songs and watch movies with my friends. When alone, I like to cook some delicious food, or sleep.</div>
+
+        <div>This is my favorite song, it is <button  type="button" onclick="playMusic()">发如雪 - 周杰伦</button></div>
+
+        <div>My favorite website is <a href="http://www.google.com">"Google"</a>, because I can find everything I want from here </div>
+    </form>
+
+
+
+<hr/>
+    <h2>Menu</h2>
+
+    <form></form>
+
+<hr/>
+
+    <div>
+        <h2>My Projects in this course</h2>
+    </div>
+
+    <table >
+        <tr>
+            <th style="text-align: left">github address:
+                <a  href = "https://github.com/ColgateQAQ/Cus-1172.git" style="color: blue; text-decoration: underline" onclick="goToGit()">
+                    https://github.com/ColgateQAQ/Cus-1172.git</a> </th>
+        </tr>
+        <tr>
+            <th style="text-align: left">My homePage: <a href="index.html"> go to my Homepage</a> </th>
+        </tr>>
+    </table>>
+
+</body>
+</html>
