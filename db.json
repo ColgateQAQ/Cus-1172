@@ -1,0 +1,25 @@
+{
+  "questionList": [
+    { "id": 1, "question": "Which of the following keywords can be used to define an interface?", "answerList": ["interface","class","abstract","final"], "rigthAnswer": 1},
+    { "id": 2, "question": "Which of the following keywords can be used to define an abstract class?", "answerList": ["interface","class","abstract","final"], "rigthAnswer": 2},
+    { "id": 3, "question": "Which of the following keywords can be used to mark a method as abstract?", "answerList": ["interface","class","abstract","final"], "rigthAnswer": 3},
+    { "id": 4, "question": "Which of the following keywords can be used to define a constant?", "answerList": ["interface","class","abstract","final"], "rigthAnswer": 4},
+    { "id": 5, "question": "Which of the following operators can be used to compare two strings for equality?", "answerList": ["==","=","!=","equals()"], "rigthAnswer": 4},
+    { "id": 6, "question": "Which of the following keywords can be used to break a loop?", "answerList": ["break","continue","return","exit"], "rigthAnswer": 1},
+    { "id": 7, "question": "Which of the following keywords can be used to limit the scope of a variable to a code block?", "answerList": ["private","protected","public","none of the above"], "rigthAnswer": 4},
+    { "id": 8, "question": "Which of the following keywords can be used to set the value of a variable to null?", "answerList": ["null","None","void","None of the above"], "rigthAnswer": 1},
+    { "id": 9, "question": "Which of the following keywords can be used to define a constructor for a class?", "answerList": ["class","constructor","method","public"], "rigthAnswer": 2},
+    { "id": 10, "question": "Which of the following keywords can be used to define a static variable or method of a class?", "answerList": ["static","final","abstract","const"], "rigthAnswer": 1},
+    { "id": 11, "question": "Which of the following keywords can be used to define an instance variable of a class?", "answerList": ["static","final","abstract","none of the above"], "rigthAnswer": 4},
+    { "id": 12, "question": "Which of the following keywords can be used to define the parameters of a method?", "answerList": ["static","final","abstract","none of the above"], "rigthAnswer": 4},
+    { "id": 13, "question": "Which of the following operators can be used to perform the remainder operation on two integers?", "answerList": ["*","/","%","|"], "rigthAnswer": 3},
+    { "id": 14, "question": "Which of the following keywords can be used to call a superclass constructor?", "answerList": ["extends","this","super","implements"], "rigthAnswer": 31},
+    { "id": 15, "question": "Which of the following keywords can be used to define a default implementation of an interface?", "answerList": ["abstract","interface","default","final"], "rigthAnswer": 3},
+    { "id": 16, "question": "Which of the following keywords can be used to return a value from a method?", "answerList": ["break","return","continue","exit"], "rigthAnswer": 2},
+    { "id": 17, "question": "Which of the following operators can perform bitwise operations on two numbers?", "answerList": ["*","&","%","||"], "rigthAnswer": 2},
+    { "id": 18, "question": "Which of the following methods can be used to convert a string to an integer?", "answerList": ["toInt()","parse()","convert()","parseInt()"], "rigthAnswer": 4},
+    { "id": 19, "question": "Which of the following keywords can be used to define the visibility of a method for the current package?", "answerList": ["package","private","protected","public"], "rigthAnswer": 1},
+    { "id": 20, "question": "Which of the following keywords can be used to define a variable-length parameter list?", "answerList": ["dynamic","varargs","array","list"], "rigthAnswer": 2}
+
+  ]
+}
