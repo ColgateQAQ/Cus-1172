@@ -35,6 +35,8 @@ router.post('/login', (req, res) => {
     const { username, password } = req.body;
 
     const users = JSON.parse(fs.readFileSync(usersPath));
+
+     console.log(users);
     const user = users.find(user => user.username === username && user.password === password);
 
     if (user) {
