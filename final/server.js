@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const PORT = 3000;
 
 const authRoutes = require('./routes/auth');
 const dashboardRoutes = require('./routes/dashboard');
@@ -26,7 +27,7 @@ app.get('/',(req,res) =>{
 })
 app.use('/dashboard', dashboardRoutes);
 
-const PORT = 3000;
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
