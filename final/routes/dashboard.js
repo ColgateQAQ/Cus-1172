@@ -11,6 +11,13 @@ router.get('/', (req, res) => {
     res.render('dashboard', { username ,videos });
 });
 
+router.get('/mine', (req, res) => {
+    var videos = JSON.parse(fs.readFileSync(videosPath));
+    const username = req.session.username;
+    videos = videos.filter(video => video.username == username);
+    res.render('dashboard', { username ,videos });
+});
+
 router.post('/add', (req, res) => {
     const { name, url } = req.body;
     const username = req.session.username;

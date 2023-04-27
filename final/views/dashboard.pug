@@ -10,6 +10,10 @@ block content
             a(href='/dashboard/logout') Logout
     main
         h2 Videos
+        div
+        a(href='/dashboard') All
+        div
+        a(href='/dashboard/mine') Mine
         each video in videos
             p
                 a(href=video.url, target='_blank')  #{video.name} by uploader:#{video.username}
