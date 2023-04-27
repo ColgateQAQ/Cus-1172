@@ -8,13 +8,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 80%;
-    max-width: 600px;
-}
 
-
-.dashboard-header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,13 +21,10 @@ form {
     align-items: center;
 }
 
-.video-grid {
-    display: grid;
+a{
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
-.video-item {
-    display: flex;
-    justify-content: center;
-}
+

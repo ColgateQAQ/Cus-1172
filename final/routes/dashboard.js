@@ -13,16 +13,21 @@ router.get('/', (req, res) => {
 
 router.post('/add', (req, res) => {
     const { name, url } = req.body;
-
+    const username = req.session.username;
     const videos = JSON.parse(fs.readFileSync(videosPath));
-    videos.push({ name, url });
+    videos.push({ name, url, username });
     fs.writeFileSync(videosPath, JSON.stringify(videos));
     res.redirect('/dashboard');
 });
 
-router.post('/logout', (req, res) => {
+router.get('/logout', (req, res) => {
     req.session.destroy();
     res.redirect('/');
+});
+
+
+router.get('/upload', (req, res) => {
+    res.render('upload');
 });
 
 module.exports = router;

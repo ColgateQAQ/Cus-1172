@@ -1,20 +1,15 @@
 extends layout
 
 block content
-    h1 Dashboard
-    h3 Welcome, #{username}!
-    form(action='/dashboard/logout' ,method='post')
-        button(type='submit') Logout
-    h2 Add Video
-    form(action='/dashboard/add', method='post')
-        label(for='name') Video Name:
-        input(type='text', name='name', id='name', required)
-        br
-        label(for='url') Video URL:
-        input(type='text', name='url', id='url', required)
-        br
-        button(type='submit') Add Video
-    h2 Videos
-    each video in videos
-        p
-            a(href=video.url, target='_blank')  #{video.name}
+    header
+        h1 Dashboard
+        h3 Welcome, #{username}!
+        div
+            a(href='/dashboard/upload') Upload Video
+        div
+            a(href='/dashboard/logout') Logout
+    main
+        h2 Videos
+        each video in videos
+            p
+                a(href=video.url, target='_blank')  #{video.name} by uploader:#{video.username}
