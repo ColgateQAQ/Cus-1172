@@ -16,7 +16,10 @@ router.post('/register', (req, res) => {
     const userExists = users.find(user => user.username === username);
 
     if (userExists) {
-        res.status(409).send('User already exists.');
+        res.send('<form action="/auth/register",method="get">' +
+            '<label>User already exists</label>' +
+            '<br>' +
+            '<button>Register page');
     } else {
         users.push({ username, password });
         fs.writeFileSync(usersPath, JSON.stringify(users));
@@ -39,7 +42,10 @@ router.post('/login', (req, res) => {
         req.session.username = username;
         res.redirect('/dashboard');
     } else {
-        res.status(401).send('Invalid credentials.');
+        res.send('<form action="/auth/login",method="get">' +
+            '<label>Invalid username or password</label>' +
+            '<br>' +
+            '<button>Login page' );
     }
 });
 
