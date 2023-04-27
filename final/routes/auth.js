@@ -38,8 +38,9 @@ router.post('/login', (req, res) => {
 
      console.log(users);
     const user = users.find(user => user.username === username && user.password === password);
-
+    console.log(user);
     if (user) {
+        console.log(user);
         req.session.user = user;
         req.session.username = username;
         res.redirect('/dashboard');
