@@ -43,6 +43,7 @@ router.post('/login', (req, res) => {
         console.log(user);
         req.session.user = user;
         req.session.username = username;
+        req.session.isAuth = true;
         res.redirect('/dashboard');
     } else {
         res.send('<form action="/auth/login",method="get">' +

@@ -6,7 +6,7 @@ const path = require('path');
 const videosPath = path.join(__dirname, '../data/videos.json');
 
 router.get('/', (req, res) => {
-    if (!req.session.user){
+    if (!req.session.isAuth){
         res.setHeader('Content-Type', 'text/html');
         res.send('<form action="/auth/login",method="get">' +
             '<label>Please login first</label>' +
@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/mine', (req, res) => {
-    if (!req.session.user){
+    if (!req.session.isAuth){
         res.setHeader('Content-Type', 'text/html');
         res.send('<form action="/auth/login",method="get">' +
             '<label>Please login first</label>' +
@@ -33,7 +33,7 @@ router.get('/mine', (req, res) => {
 });
 
 router.post('/add', (req, res) => {
-    if (!req.session.user){
+    if (!req.session.isAuth){
         res.setHeader('Content-Type', 'text/html');
         res.send('<form action="/auth/login",method="get">' +
             '<label>Please login first</label>' +
@@ -55,7 +55,7 @@ router.get('/logout', (req, res) => {
 
 
 router.get('/upload', (req, res) => {
-    if (!req.session.user){
+    if (!req.session.isAuth){
         res.setHeader('Content-Type', 'text/html');
         res.send('<form action="/auth/login",method="get">' +
             '<label>Please login first</label>' +
