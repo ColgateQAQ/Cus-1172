@@ -6,16 +6,20 @@ const path = require('path');
 const videosPath = path.join(__dirname, '../data/videos.json');
 
 router.get('/', (req, res) => {
+    console.log(req.session);
     if (!req.session.isAuth){
         res.setHeader('Content-Type', 'text/html');
         res.send('<form action="/auth/login",method="get">' +
             '<label>Please login first</label>' +
             '<br>' +
             '<button>Login page');
+
+    } else {
+        const videos = JSON.parse(fs.readFileSync(videosPath));
+        const username = req.session.username;
+        res.render('dashboard', { username ,videos });
     }
-    const videos = JSON.parse(fs.readFileSync(videosPath));
-    const username = req.session.username;
-    res.render('dashboard', { username ,videos });
+
 });
 
 router.get('/mine', (req, res) => {
